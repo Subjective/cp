@@ -1,7 +1,4 @@
-package USACO;
-
 import java.io.*;
-import java.util.*;
 
 public class MadScientist {
     public static void main(String[] args) throws IOException {
