@@ -22,9 +22,12 @@ int main() {
     while (left <= right) {
         int sub = min(A[left].second, A[right].second);
         if (left == right) sub /= 2;
+
         ans = max(ans, A[left].first + A[right].first);
+
         A[left].second -= sub;
         A[right].second -= sub;
+
         if (A[left].second == 0) left++;
         if (A[right].second == 0) right--;
     }
