@@ -14,6 +14,7 @@ int solve_min() {
     }
     return N - max_cows;
 }
+
 int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
