@@ -11,7 +11,6 @@ int main() {
     }
     sort(a, a + n);
     int ans = 0, cur = 0;
-    // 3 3 4 4 7 8
     while (ans < n && cur + a[ans] <= x) {
         cur += a[ans];
         ans++;
