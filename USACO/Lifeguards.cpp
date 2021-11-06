@@ -10,7 +10,7 @@ struct event {
     bool enters;
 };
 
-bool cmp(const event& a, event& b) { return a.time < b.time; }
+bool cmp(const event& a, const event& b) { return a.time < b.time; }
 
 int main() {
     cin.tie(0)->sync_with_stdio(0);
