@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class MountainView {
+public class Mountain_View {
 
     static class Base implements Comparable<Base> {
         public int xL, xR;

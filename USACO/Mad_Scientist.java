@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class MadScientist {
+public class Mad_Scientist {
     public static void main(String[] args) throws IOException {
         // File IO
         BufferedReader in = new BufferedReader(new FileReader("breedflip.in"));

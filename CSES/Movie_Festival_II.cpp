@@ -30,5 +30,5 @@ int main() {
         ans++;
     }
 
-    cout << ans;
+    cout << ans << '\n';
 }
