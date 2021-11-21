@@ -2,7 +2,6 @@ import java.io.*;
 
 public class Mad_Scientist {
     public static void main(String[] args) throws IOException {
-        // File IO
         BufferedReader in = new BufferedReader(new FileReader("breedflip.in"));
         PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("breedflip.out")));
 
