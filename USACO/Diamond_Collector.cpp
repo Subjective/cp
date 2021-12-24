@@ -18,6 +18,7 @@ int main() {
         cin >> diamonds[i];
     }
     sort(diamonds, diamonds + N);
+
     int l = 0, r = 0;
     while (l < N) {
         if (diamonds[r] - diamonds[l] <= K && r < N) {
@@ -27,10 +28,12 @@ int main() {
             l++;
         }
     }
+
     maxLengthAfterI[N] = 0;
     for (int i = N - 1; i >= 0; i--) {
         maxLengthAfterI[i] = max(maxLengthAfterI[i + 1], maxLengthAtI[i]);
     }
+
     for (int i = 0; i < N; i++) {
         ans = max(ans, maxLengthAtI[i] + maxLengthAfterI[i + maxLengthAtI[i]]);
     } 

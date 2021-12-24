@@ -57,6 +57,10 @@ int main() {
 
         int minRepn = *(reps[repn].begin());
         int maxRep1 = *(reps[rep1].rbegin());
+        if (minRepn == maxRep1) {
+            cout << 0;
+            return 0;
+        }
         int min1 = (minRepn - maxRep1) * (minRepn - maxRep1);
         set<int> s;
         for (int i = 1; i <= count; i++) {
