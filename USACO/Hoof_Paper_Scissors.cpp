@@ -10,6 +10,9 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
+    freopen("hps.in", "r", stdin);
+    freopen("hps.out", "w", stdout);
+
     cin >> N;
     for (int i = 1; i <= N; i++) {
         char pred; cin >> pred;
