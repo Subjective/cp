@@ -12,6 +12,7 @@ using pl = pair<ll, ll>;
 
 #define all(x) begin(x), end(x)
 #define rall(x) rbegin(x), rend(x);
+#define sz(x) (int)(x).size()
 #define PB push_back
 #define MP make_pair
 #define F first
@@ -22,13 +23,14 @@ using pl = pair<ll, ll>;
 #define readl(e) ll e; cin >> e
 #define reads(e) string e; cin >> e
 
-void setup(string s) {
-    freopen((s+".in").c_str(), "r", stdin);
-    freopen((s+".out").c_str(), "w", stdout);
+void setIO(string name = "") {
+	ios_base::sync_with_stdio(0); cin.tie(0);
+	if(sz(name)){
+		freopen((name+".in").c_str(), "r", stdin);
+		freopen((name+".out").c_str(), "w", stdout);
+	}
 }
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(NULL);
 
 }
