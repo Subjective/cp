@@ -24,7 +24,7 @@ using pl = pair<ll, ll>;
 #define reads(e) string e; cin >> e
 
 void setIO(string name = "") {
-	ios_base::sync_with_stdio(0); cin.tie(0);
+	ios_base::sync_with_stdio(false); cin.tie(NULL);
 	if(sz(name)){
 		freopen((name+".in").c_str(), "r", stdin);
 		freopen((name+".out").c_str(), "w", stdout);
